@@ -1,10 +1,7 @@
-import { HeroItem, HeroList } from "../components"
-import { heroes } from "../data/heroes";
-import { groupHeroesByPublisher } from "../components";
+
 
 export const MarvelPage = () => {
   
-  const groupedHeroes = groupHeroesByPublisher(heroes);
   
   return (
     <>
