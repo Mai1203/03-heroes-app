@@ -1,37 +1,28 @@
-import { useState, useEffect } from 'react';
-import { fetchImages } from '../helpers';
+import { Link } from 'react-router-dom';
+import { useFetchImages } from '../hooks';
 import '../styles';
 
 export const HeroItem = ({ heroName }) => {
-  const [imageUrl, setImageUrl] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const getHeroImage = async () => {
-      setLoading(true);
-      try {
-        const url = await fetchImages(heroName);
-        setImageUrl(url);
-      } catch (err) {
-        setError('Error al cargar la imagen');
-      } finally {
-        setLoading(false);
-      }
-    };
-    getHeroImage();
-  }, [heroName]);
+  
+  const { heroData, loading, error } = useFetchImages(heroName);
 
   return (
     <div className="hero-item">
       {loading ? (
-        <p>Cargando...</p>
+        <p>Cargando imagen...</p>
       ) : error ? (
         <p>{error}</p>
       ) : (
-        <img src={imageUrl} alt={heroName} />
+        <Link to={`/hero/${heroName}`} className="card">
+          <div className="card">
+            <img src={heroData.imageUrl} alt={heroName} className="card-img" />
+            <div className="card-content">
+              <h3 className="card-title">{heroName}</h3>
+              <p className="card-description">{heroData.fullName}</p> {/* Muestra la descripción aquí */}
+            </div>
+          </div>
+        </Link>
       )}
-      <h3>{heroName}</h3>
     </div>
   );
 };

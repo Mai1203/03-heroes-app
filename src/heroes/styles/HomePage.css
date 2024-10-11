@@ -1,0 +1,65 @@
+/* Estilos para la página principal (HomePage) */
+.home-page {               /* Ancho máximo de la página */
+  margin: 0 auto;                   /* Centrar la página */
+  padding: 20px;                    /* Espaciado interno */
+  background-color: #f0f0f0;       /* Fondo gris claro */
+  font-family: Arial, sans-serif;    /* Fuente general de la página */
+}
+
+h1 {
+  text-align: center;                /* Centrar el título principal */
+  font-size: 2.5rem;                 /* Tamaño del título */
+  color: #333;                       /* Color del texto del título */
+  margin-bottom: 20px;               /* Margen debajo del título */
+}
+
+.search-bar {
+  display: flex;                     /* Usar flexbox para alinear la barra de búsqueda */
+  justify-content: center;           /* Centrar la barra de búsqueda */
+  margin-bottom: 20px;               /* Espacio debajo de la barra de búsqueda */
+}
+
+.search-bar input {
+  width: 50%;                       /* Ancho del campo de búsqueda */
+  padding: 10px;                   /* Espaciado interno del campo */
+  font-size: 1.1rem;               /* Tamaño de la fuente */
+  border: 2px solid #007bff;       /* Borde azul */
+  border-radius: 5px;              /* Bordes redondeados */
+  outline: none;                   /* Sin contorno al seleccionar */
+  transition: border-color 0.3s;   /* Transición suave para el borde */
+}
+
+.search-bar input:focus {
+  border-color: #0056b3;           /* Cambiar el color del borde al enfocar */
+}
+
+.hero-list {
+  display: grid;                    /* Usar grid para la lista de héroes */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsivo */
+  gap: 20px;                        /* Espacio entre tarjetas */
+}
+
+.hero-item {
+  background-color: #fff;           /* Fondo blanco para cada tarjeta de héroe */
+  border-radius: 10px;              /* Bordes redondeados en las tarjetas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s;       /* Transición suave para el efecto hover */
+}
+
+.hero-item:hover {
+  transform: translateY(-5px);      /* Levantar la tarjeta al pasar el mouse */
+}
+
+.card-img {
+  width: 100%;                      /* Imagen ocupa todo el ancho de la tarjeta */
+  height: auto;                     /* Mantener proporción de la imagen */
+  border-top-left-radius: 10px;    /* Bordes redondeados arriba a la izquierda */
+  border-top-right-radius: 10px;   /* Bordes redondeados arriba a la derecha */
+}
+
+.card-title {
+  margin: 10px;                     /* Espacio alrededor del título */
+  font-size: 1.2rem;                /* Tamaño del título en la tarjeta */
+  color: #333;                      /* Color del texto del título */
+  text-align: center;               /* Centrar el título */
+}

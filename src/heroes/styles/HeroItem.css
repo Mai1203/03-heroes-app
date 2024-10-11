@@ -1,21 +1,53 @@
 .hero-item {
   text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   transition: transform 0.3s;
+  text-align: center;
 }
 
-.hero-item img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-.hero-item:hover {
+.card:hover {
   transform: scale(1.05);
 }
 
-.hero-item h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
+.card-img {
+  width: 100%;
+  height: auto;
 }
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-content {
+  padding: 10px;
+  background-color: #f7f7f7; /* Fondo gris claro para la sección de contenido */
+}
+
+.card-title {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.9rem; /* Ajusta el tamaño de la fuente según sea necesario */
+  color: #666;      /* Color gris para la descripción */
+  margin-top: 5px; /* Margen superior para separación */
+  line-height: 1.2; /* Aumenta el espacio entre líneas para mejor legibilidad */
+}
+

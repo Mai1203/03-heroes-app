@@ -1,26 +1,27 @@
 import { useState, useEffect } from 'react';
-import { fetchImages } from '../api';
+import { fetchHeroData } from '../helpers';
 
-const useFetchImages = (heroName) => {
-  const [imageUrl, setImageUrl] = useState('');
+export const useFetchImages = (heroName) => {
+  const [heroData, setHeroData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const getHeroImage = async () => {
+    const getHeroData = async () => {
+      setLoading(true);
       try {
-        const url = await fetchImages(heroName);
-        setImageUrl(url);
+        const data = await fetchHeroData(heroName);
+        setHeroData(data);
       } catch (err) {
-        setError('No se pudo cargar la imagen');
+        setError('Error al cargar los datos del héroe.');
       } finally {
         setLoading(false);
       }
     };
-    getHeroImage();
+
+    getHeroData();
   }, [heroName]);
 
-  return { imageUrl, loading, error };
+  return { heroData, loading, error };
 };
 
-export default useFetchImages;
