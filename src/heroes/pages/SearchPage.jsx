@@ -6,7 +6,7 @@ export const SearchPage = () => {
   const [filter, setFilter] = useState("");
 
   const filteredHeroes = heroes.filter((hero) =>
-    hero.toLowerCase().includes(filter.toLowerCase())
+    hero.superhero.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
