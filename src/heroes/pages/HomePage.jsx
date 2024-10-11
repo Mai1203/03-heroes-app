@@ -7,7 +7,7 @@ export const HomePage = () => {
     <>
       <div className="home-page">
         <h1>Lista de Héroes</h1>
-        <HeroList heroes={heroes} />
+        <HeroList heroes={heroes.name} />
       </div>
     </>
   );

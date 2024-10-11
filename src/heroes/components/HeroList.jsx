@@ -3,6 +3,7 @@ import { HeroItem } from './HeroItem';
 import '../styles';
 
 export const HeroList = ({ heroes }) => {
+  
   return (
     <div className="hero-list">
       {heroes.map(hero => (
@@ -11,5 +12,6 @@ export const HeroList = ({ heroes }) => {
     </div>
   );
 };
+
 
 

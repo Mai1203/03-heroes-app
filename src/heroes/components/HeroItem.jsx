@@ -18,7 +18,7 @@ export const HeroItem = ({ heroName }) => {
             <img src={heroData.imageUrl} alt={heroName} className="card-img" />
             <div className="card-content">
               <h3 className="card-title">{heroName}</h3>
-              <p className="card-description">{heroData.fullName}</p> {/* Muestra la descripción aquí */}
+              <p className="card-description">{heroData.fullName}</p> 
             </div>
           </div>
         </Link>
