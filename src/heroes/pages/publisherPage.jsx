@@ -6,7 +6,7 @@ import "../styles";
 export const MarvelPage = () => {
   return (
     <>
-      <div className="marvel-page">
+      <div className="home-page">
         <h1>Héroes de Marvel</h1>
         <HeroPublisher heroes={heroes} publisher="Marvel Comics" />
       </div>
@@ -17,7 +17,7 @@ export const MarvelPage = () => {
 export const DCPage = () => {
   return (
     <>
-      <div className="dc-page">
+      <div className="home-page">
         <h1>Héroes de DC</h1>
         <HeroPublisher heroes={heroes} publisher="DC Comics" />
       </div>

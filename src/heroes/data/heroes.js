@@ -1,125 +1,53 @@
 export const heroes = [
   // Héroes de DC Comics
-  {
-    id: 'dc-batman',
-    superhero: 'Batman',
-    publisher: 'DC Comics',
-    alter_ego: 'Bruce Wayne',
-    first_appearance: 'Detective Comics #27',
-    characters: 'Bruce Wayne'
-  },
-  {
-    id: 'dc-superman',
-    superhero: 'Superman',
-    publisher: 'DC Comics',
-    alter_ego: 'Kal-El',
-    first_appearance: 'Action Comics #1',
-    characters: 'Kal-El'
-  },
-  {
-    id: 'dc-wonder-woman',
-    superhero: 'Wonder Woman',
-    publisher: 'DC Comics',
-    alter_ego: 'Diana Prince',
-    first_appearance: 'All Star Comics #8',
-    characters: 'Diana Prince'
-  },
-  {
-    id: 'dc-flash',
-    superhero: 'Flash',
-    publisher: 'DC Comics',
-    alter_ego: 'Barry Allen',
-    first_appearance: 'Flash Comics #1',
-    characters: 'Barry Allen'
-  },
-  {
-    id: 'dc-green-lantern',
-    superhero: 'Green Lantern',
-    publisher: 'DC Comics',
-    alter_ego: 'Hal Jordan',
-    first_appearance: 'Showcase #22',
-    characters: 'Hal Jordan'
-  },
-  {
-    id: 'dc-aquaman',
-    superhero: 'Aquaman',
-    publisher: 'DC Comics',
-    alter_ego: 'Arthur Curry',
-    first_appearance: 'More Fun Comics #73',
-    characters: 'Arthur Curry'
-  },
-  {
-    id: 'dc-cyborg',
-    superhero: 'Cyborg',
-    publisher: 'DC Comics',
-    alter_ego: 'Victor Stone',
-    first_appearance: 'DC Comics Presents #26',
-    characters: 'Victor Stone'
-  },
+  { superhero: 'Batman', publisher: 'DC Comics' },
+  { superhero: 'Superman', publisher: 'DC Comics' },
+  { superhero: 'Wonder Woman', publisher: 'DC Comics' },
+  { superhero: 'Flash', publisher: 'DC Comics' },
+  { superhero: 'Green Lantern', publisher: 'DC Comics' },
+  { superhero: 'Aquaman', publisher: 'DC Comics' },
+  { superhero: 'Cyborg', publisher: 'DC Comics' },
+  { superhero: 'Green Arrow', publisher: 'DC Comics' },
+  { superhero: 'Martian Manhunter', publisher: 'DC Comics' },
+  { superhero: 'Shazam', publisher: 'DC Comics' },
+  { superhero: 'Hawkgirl', publisher: 'DC Comics' },
+  { superhero: 'Black Canary', publisher: 'DC Comics' },
+  { superhero: 'Nightwing', publisher: 'DC Comics' },
+  { superhero: 'Catwoman', publisher: 'DC Comics' },
+  { superhero: 'Raven', publisher: 'DC Comics' },
+  { superhero: 'Doctor Fate', publisher: 'DC Comics' },
+  { superhero: 'Blue Beetle', publisher: 'DC Comics' },
+  { superhero: 'Booster Gold', publisher: 'DC Comics' },
+  { superhero: 'Static Shock', publisher: 'DC Comics' },
+  { superhero: 'Supergirl', publisher: 'DC Comics' },
 
   // Héroes de Marvel Comics
-  {
-    id: 'marvel-spider-man',
-    superhero: 'Spider-Man',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Peter Parker',
-    first_appearance: 'Amazing Fantasy #15',
-    characters: 'Peter Parker'
-  },
-  {
-    id: 'marvel-iron-man',
-    superhero: 'Iron Man',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Tony Stark',
-    first_appearance: 'Tales of Suspense #39',
-    characters: 'Tony Stark'
-  },
-  {
-    id: 'marvel-thor',
-    superhero: 'Thor',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Thor Odinson',
-    first_appearance: 'Journey into Mystery #83',
-    characters: 'Thor Odinson'
-  },
-  {
-    id: 'marvel-hulk',
-    superhero: 'Hulk',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Bruce Banner',
-    first_appearance: 'The Incredible Hulk #1',
-    characters: 'Bruce Banner'
-  },
-  {
-    id: 'marvel-black-widow',
-    superhero: 'Black Widow',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Natasha Romanoff',
-    first_appearance: 'Tales of Suspense #52',
-    characters: 'Natasha Romanoff'
-  },
-  {
-    id: 'marvel-captain-america',
-    superhero: 'Captain America',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Steve Rogers',
-    first_appearance: 'Captain America Comics #1',
-    characters: 'Steve Rogers'
-  },
-  {
-    id: 'marvel-doctor-strange',
-    superhero: 'Doctor Strange',
-    publisher: 'Marvel Comics',
-    alter_ego: 'Stephen Strange',
-    first_appearance: 'Strange Tales #110',
-    characters: 'Stephen Strange'
-  },
-  {
-    id: 'marvel-black-panther',
-    superhero: 'Black Panther',
-    publisher: 'Marvel Comics',
-    alter_ego: 'T\'Challa',
-    first_appearance: 'Fantastic Four #52',
-    characters: 'T\'Challa'
-  }
+  { superhero: 'Spider-Man', publisher: 'Marvel Comics' },
+  { superhero: 'Iron Man', publisher: 'Marvel Comics' },
+  { superhero: 'Thor', publisher: 'Marvel Comics' },
+  { superhero: 'Hulk', publisher: 'Marvel Comics' },
+  { superhero: 'Black Widow', publisher: 'Marvel Comics' },
+  { superhero: 'Captain America', publisher: 'Marvel Comics' },
+  { superhero: 'Doctor Strange', publisher: 'Marvel Comics' },
+  { superhero: 'Black Panther', publisher: 'Marvel Comics' },
+  { superhero: 'Ant-Man', publisher: 'Marvel Comics' },
+  { superhero: 'Wolverine', publisher: 'Marvel Comics' },
+  { superhero: 'Deadpool', publisher: 'Marvel Comics' },
+  { superhero: 'Captain Marvel', publisher: 'Marvel Comics' },
+  { superhero: 'Vision', publisher: 'Marvel Comics' },
+  { superhero: 'Scarlet Witch', publisher: 'Marvel Comics' },
+  { superhero: 'Daredevil', publisher: 'Marvel Comics' },
+  { superhero: 'Luke Cage', publisher: 'Marvel Comics' },
+  { superhero: 'Iron Fist', publisher: 'Marvel Comics' },
+  { superhero: 'Jessica Jones', publisher: 'Marvel Comics' },
+  { superhero: 'Silver Surfer', publisher: 'Marvel Comics' },
+  { superhero: 'Nova', publisher: 'Marvel Comics' },
+  { superhero: 'Groot', publisher: 'Marvel Comics' },
+  { superhero: 'Rocket Raccoon', publisher: 'Marvel Comics' },
+  { superhero: 'Moon Knight', publisher: 'Marvel Comics' },
+  { superhero: 'Ghost Rider', publisher: 'Marvel Comics' },
+  { superhero: 'Punisher', publisher: 'Marvel Comics' },
+  { superhero: 'Misty Knight', publisher: 'Marvel Comics' },
+  { superhero: 'Colleen Wing', publisher: 'Marvel Comics' },
+  { superhero: 'Black Knight', publisher: 'Marvel Comics' },
 ];

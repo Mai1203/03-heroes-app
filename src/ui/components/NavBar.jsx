@@ -2,7 +2,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
 
-    const navigate = useNavigate(); // Custom Hook
+    const navigate = useNavigate(); 
 
     const onLogout = () => {
         navigate('/login',{ replace: true });
@@ -12,15 +12,16 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-4">
             
+            <img src="assets/superheroe.png" alt="Logo" width="50" height="44" className="d-inline-block align-text-top"></img>
             <Link 
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                API Heroes
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+            <div className="collapse navbar-collapse justify-content-center">
+                <div className="mx-auto navbar-nav">
 
                     <NavLink 
                         className={ ({isActive}) => `nav-item nav-link ${ isActive ? 'active':''}`} 
