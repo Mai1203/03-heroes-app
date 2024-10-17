@@ -35,7 +35,7 @@
 
 .card-content {
   padding: 10px;
-  background-color: #f7f7f7; /* Fondo gris claro para la sección de contenido */
+  background-color: #f7f7f7; 
 }
 
 .card-title {
@@ -45,9 +45,9 @@
 }
 
 .card-description {
-  font-size: 0.9rem; /* Ajusta el tamaño de la fuente según sea necesario */
-  color: #666;      /* Color gris para la descripción */
-  margin-top: 5px; /* Margen superior para separación */
-  line-height: 1.2; /* Aumenta el espacio entre líneas para mejor legibilidad */
+  font-size: 0.9rem; 
+  color: #666;     
+  margin-top: 5px; 
+  line-height: 1.2; 
 }
 

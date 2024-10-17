@@ -9,46 +9,45 @@
 }
 
 .hero-content {
-  display: flex;                 /* Usar flexbox para alinear imagen y texto */
-  align-items: center;           /* Centrar verticalmente el contenido */
+  display: flex;                 
+  align-items: center;          
 }
 
 .hero-image {
-  width: 300px;                  /* Establecer un ancho fijo para la imagen */
-  height: auto;                  /* Mantener la proporción de la imagen */
-  border-radius: 10px;           /* Bordes redondeados en la imagen */
-  margin-right: 20px;            /* Espacio a la derecha de la imagen */
+  width: 300px;                 
+  height: auto;                  
+  border-radius: 10px;         
+  margin-right: 20px;           
 }
 
 .hero-info {
-  flex: 1;                       /* Permitir que el texto ocupe el espacio restante */
+  flex: 1;                       
 }
 
 .hero-detail h1 {
-  font-size: 2.5rem;             /* Tamaño grande para el nombre del héroe */
-  margin-bottom: 10px;           /* Espacio debajo del título */
-  color: #333;                   /* Color del título */
+  font-size: 2.5rem;             
+  margin-bottom: 10px;           
+  color: #333;                   
 }
 
 .hero-detail p {
-  font-size: 1.1rem;             /* Tamaño de fuente para la descripción */
-  line-height: 1.6;              /* Espaciado entre líneas para legibilidad */
-  color: #666;                   /* Color de texto más suave */
+  font-size: 1.1rem;            
+  line-height: 1.6;             
+  color: #666;                   
 }
 
-/* Adaptación para pantallas más pequeñas */
 @media (max-width: 768px) {
   .hero-detail {
     padding: 15px;
   }
 
   .hero-image {
-    width: 100%;                 /* La imagen ocupa el ancho completo en pantallas pequeñas */
-    margin-right: 0;            /* Eliminar margen en pantallas pequeñas */
+    width: 100%;                 
+    margin-right: 0;           
   }
 
   .hero-info {
-    margin-top: 20px;           /* Espacio arriba del texto en pantallas pequeñas */
+    margin-top: 20px;           
   }
 
   .hero-detail h1 {

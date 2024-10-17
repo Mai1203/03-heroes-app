@@ -1,11 +1,10 @@
-/* src/styles/HomePage.css */
 
 .home-page {
-  background-color: #e0e0e0; /* Ajusta la altura al 100% de la ventana */
-  align-items: center; /* Para centrar contenido verticalmente */
-  justify-content: center; /* Para centrar contenido horizontalmente */
-  color: black; /* Cambia el color del texto según tu preferencia */
-  text-align: center; /* Centra el texto */
+  background-color: #e0e0e0;
+  align-items: center; 
+  justify-content: center;
+  color: black; 
+  text-align: center;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;

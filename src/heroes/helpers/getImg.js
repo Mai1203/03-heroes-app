@@ -23,7 +23,7 @@ export const fetchHeroData = async (heroName) => {
     } else {
       console.log('No se encontró el héroe o hubo un error en la respuesta.');
       return {
-        imageUrl: 'assets/perrito_heroe.png',
+        imageUrl: '/assets/perrito_heroe.png',
         fullName: 'Héroe no encontrado',
         alterEgos: 'No disponible',
         aliases: [],
@@ -35,6 +35,6 @@ export const fetchHeroData = async (heroName) => {
     }
   } catch (error) {
     console.error('Error al obtener datos del héroe:', error);
-    return { imageUrl: 'assets/perrito_heroe.png', description: 'Descripción no disponible' };
+    return { imageUrl: '/assets/perrito_heroe.png', description: 'Descripción no disponible' };
   }
 };

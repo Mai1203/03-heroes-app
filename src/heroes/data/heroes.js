@@ -1,5 +1,4 @@
 export const heroes = [
-  // Héroes de DC Comics
   { superhero: 'Batman', publisher: 'DC Comics' },
   { superhero: 'Superman', publisher: 'DC Comics' },
   { superhero: 'Wonder Woman', publisher: 'DC Comics' },
@@ -20,8 +19,6 @@ export const heroes = [
   { superhero: 'Booster Gold', publisher: 'DC Comics' },
   { superhero: 'Static Shock', publisher: 'DC Comics' },
   { superhero: 'Supergirl', publisher: 'DC Comics' },
-
-  // Héroes de Marvel Comics
   { superhero: 'Spider-Man', publisher: 'Marvel Comics' },
   { superhero: 'Iron Man', publisher: 'Marvel Comics' },
   { superhero: 'Thor', publisher: 'Marvel Comics' },
